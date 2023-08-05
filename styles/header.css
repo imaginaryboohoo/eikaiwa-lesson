@@ -49,6 +49,8 @@ a:active {
   width: 100px;
   height: 100px;
   background-color: #ff2a2a;
+  position: fixed;
+  right: 0;
 }
 
 .header__hamburger-bar {
