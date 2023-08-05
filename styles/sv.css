@@ -1,0 +1,88 @@
+.voice {
+  margin-top: 10px;
+}
+
+.voice__title {
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 20px;
+  line-height: 150%;
+  position: relative;
+}
+
+.voice__title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background-color: #333333;
+  position: absolute;
+  left: calc(50% - 50px);
+  bottom: 0px;
+}
+
+.voice__student {
+  width: 860px;
+  margin: 80px auto 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.voice__student-box {
+  display: flex;
+  gap: 30px;
+}
+
+.voice__student-box:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.voice__student-icon img {
+  background-color: #c1c1c1;
+  border-radius: 999px;
+  width: 120px;
+  height: 120px;
+}
+
+.voice__student-name {
+  font-size: 12px;
+  line-height: 150%;
+  text-align: center;
+}
+
+.voice__student-ballon {
+  font-size: 16px;
+  line-height: 150%;
+  width: 500px;
+  height: fit-content;
+  padding: 20px;
+  background-color: #e3eefa;
+  border-radius: 15px;
+  position: relative;
+}
+
+.voice__student-box:nth-child(odd) .voice__student-ballon::before {
+  content: "";
+  clip-path: polygon(100% 0, 0 50%, 100% 100%);
+  background-color: #e3eefa;
+  height: 30px;
+  width: 15px;
+  top: 50%;
+  left: -15px;
+  padding: 0;
+  position: absolute;
+}
+
+.voice__student-box:nth-child(even) .voice__student-ballon::after {
+  content: "";
+  clip-path: polygon(0 0, 0 100%, 100% 50%);
+  background-color: #e3eefa;
+  height: 30px;
+  width: 15px;
+  top: 50%;
+  right: -15px;
+  padding: 0;
+  position: absolute;
+}
