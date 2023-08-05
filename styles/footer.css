@@ -1,0 +1,32 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 0px 20px;
+  background-color: #e2e2e2;
+}
+
+.footer__list {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+.footer__title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer__item {
+  margin: 20px 0px;
+}
+
+.footer__item a {
+  color: #333;
+  font-size: 14px;
+}
+
+.footer__copyright {
+  font-size: 12px;
+  margin-top: 80px;
+  text-align: center;
+}
