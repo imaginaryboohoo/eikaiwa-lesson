@@ -1,5 +1,5 @@
 .voice {
-  margin-top: 10px;
+  margin-top: 120px;
 }
 
 .voice__title {
@@ -27,7 +27,7 @@
   margin: 80px auto 0px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 60px;
 }
 
 .voice__student-box {
