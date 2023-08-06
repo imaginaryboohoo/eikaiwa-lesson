@@ -9,6 +9,7 @@
     <title>BBB英会話スクール</title>
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/nav.css" />
     <link rel="stylesheet" href="styles/mv.css" />
     <link rel="stylesheet" href="styles/reason.css" />
     <link rel="stylesheet" href="styles/sv.css" />
@@ -26,22 +27,32 @@
           <img src="img/logo-r.svg" />
         </a>
       </div>
-      <div class="header__hamburger-icon">
-        <span class="header__hamburger-bar"></span>
-        <span class="header__hamburger-bar"></span>
-        <span class="header__hamburger-bar"></span>
+      <div id="js-hamburger" class="header__hamburger-icon">
+        <span class="header__hamburger-bar" data-is-open="true"></span>
+        <span class="header__hamburger-bar" data-is-open="true"></span>
+        <span class="header__hamburger-bar" data-is-open="true"></span>
       </div>
-      <!-- <nav class="header__hamburger-menu">
+      <nav id="js-nav" class="header__hamburger-menu" data-is-open="true">
         <div class="header__hamburger-logo">
           <img src="img/logo-w.svg" />
         </div>
-        <ul>
-          <li><a href="#reason">BBBが選ばれる理由</a></li>
-          <li><a href="#studentVoice">受講者の声</a></li>
-          <li><a href="#school">スクールの概要</a></li>
-        </ul>
-        <a class="header__hamburger-cv" href="#">無料体験に申し込む</a>
-      </nav> -->
+        <div class="header__hamburger-items">
+          <ul>
+            <li class="header__hamburger-item">
+              <a href="#reason">BBBが選ばれる理由</a>
+            </li>
+            <li class="header__hamburger-item">
+              <a href="#studentVoice">受講生の声</a>
+            </li>
+            <li class="header__hamburger-item">
+              <a href="#school">スクールの概要</a>
+            </li>
+          </ul>
+          <div class="header__hamburger-cv">
+            <a href="#">無料体験に申し込む</a>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main>
@@ -246,4 +257,5 @@
       <p class="footer__copyright">© BBB English School</p>
     </footer>
   </body>
+  <script src="./scripts/nav.js"></script>
 </html>
