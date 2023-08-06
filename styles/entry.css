@@ -4,18 +4,33 @@
   text-align: center;
   margin: 120px auto;
   max-width: 860px;
+
+  @media screen and (max-width: 900px) {
+    margin: 60px auto;
+    max-width: 390px;
+    padding: 0 20px;
+  }
 }
 
 .entry__title {
   font-size: 32px;
   font-weight: bold;
   line-height: 150%;
+
+  @media screen and (max-width: 900px) {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
 }
 
 .entry__text {
   font-size: 18px;
   line-height: 150%;
   margin-bottom: 40px;
+
+  @media screen and (max-width: 900px) {
+    font-size: 16px;
+  }
 }
 
 .entry__btn {
@@ -28,6 +43,10 @@
   border-radius: 41px;
   padding: 15px;
   transition: 0.3s;
+
+  @media screen and (max-width: 900px) {
+    font-size: 20px;
+  }
 }
 
 .entry__btn:hover {
